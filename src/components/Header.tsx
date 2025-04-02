@@ -1,4 +1,3 @@
-
 import { useState, useEffect } from 'react';
 import FuturisticButton from './FuturisticButton';
 import { Link } from 'react-router-dom';
@@ -7,6 +6,7 @@ import { Menu, X } from 'lucide-react';
 const Header = () => {
   const [isScrolled, setIsScrolled] = useState(false);
   const [mobileMenuOpen, setMobileMenuOpen] = useState(false);
+  const basePath = import.meta.env.PROD ? '/futuristic-web-nexus' : '';
 
   useEffect(() => {
     const handleScroll = () => {
@@ -24,7 +24,7 @@ const Header = () => {
       }`}
     >
       <div className="container mx-auto px-4 py-3 flex items-center justify-between">
-        <Link to="/" className="flex items-center space-x-2">
+        <Link to={`${basePath}/`} className="flex items-center space-x-2">
           <div className="relative h-8 w-8 flex items-center justify-center">
             <div className="absolute inset-0 border border-neon-purple rounded-full animate-spin-slow opacity-50"></div>
             <div className="absolute inset-1 border border-neon-blue rounded-full animate-spin-slow opacity-50" style={{ animationDirection: 'reverse', animationDuration: '10s' }}></div>
@@ -36,7 +36,7 @@ const Header = () => {
         {/* Desktop Navigation */}
         <nav className="hidden md:flex items-center space-x-8">
           <Link 
-            to="/" 
+            to={`${basePath}/`} 
             className="text-white/80 hover:text-white font-mono text-sm tracking-wider transition-colors"
             onClick={(e) => {
               e.preventDefault();
@@ -46,7 +46,7 @@ const Header = () => {
             HOME
           </Link>
           <Link 
-            to="/about" 
+            to={`${basePath}/about`} 
             className="text-white/80 hover:text-white font-mono text-sm tracking-wider transition-colors"
             onClick={(e) => {
               e.preventDefault();
@@ -56,7 +56,7 @@ const Header = () => {
             ABOUT
           </Link>
           <Link 
-            to="/contact" 
+            to={`${basePath}/contact`} 
             className="text-white/80 hover:text-white font-mono text-sm tracking-wider transition-colors"
             onClick={(e) => {
               e.preventDefault();
@@ -75,7 +75,7 @@ const Header = () => {
         </nav>
 
         {/* Mobile Menu Button */}
-        <button 
+        <button
           className="md:hidden text-white"
           onClick={() => setMobileMenuOpen(!mobileMenuOpen)}
         >
@@ -88,7 +88,7 @@ const Header = () => {
         <div className="md:hidden bg-black/90 backdrop-blur-xl">
           <div className="container mx-auto px-4 py-4 flex flex-col space-y-4">
             <Link 
-              to="/" 
+              to={`${basePath}/`} 
               className="text-white/80 hover:text-white font-mono text-sm tracking-wider py-2 border-b border-white/10 transition-colors"
               onClick={(e) => {
                 e.preventDefault();
@@ -99,7 +99,7 @@ const Header = () => {
               HOME
             </Link>
             <Link 
-              to="/about" 
+              to={`${basePath}/about`} 
               className="text-white/80 hover:text-white font-mono text-sm tracking-wider py-2 border-b border-white/10 transition-colors"
               onClick={(e) => {
                 e.preventDefault();
@@ -110,7 +110,7 @@ const Header = () => {
               ABOUT
             </Link>
             <Link 
-              to="/contact" 
+              to={`${basePath}/contact`} 
               className="text-white/80 hover:text-white font-mono text-sm tracking-wider py-2 border-b border-white/10 transition-colors"
               onClick={(e) => {
                 e.preventDefault();
