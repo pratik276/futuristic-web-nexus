@@ -1,4 +1,3 @@
-
 import { useEffect, useRef } from 'react';
 import FuturisticButton from './FuturisticButton';
 import { ArrowDown } from 'lucide-react';
@@ -6,6 +5,7 @@ import { ArrowDown } from 'lucide-react';
 const HeroSection = () => {
   const containerRef = useRef<HTMLDivElement>(null);
   const imageRef = useRef<HTMLImageElement>(null);
+  const basePath = import.meta.env.PROD ? '/futuristic-web-nexus' : '';
 
   useEffect(() => {
     const handleMouseMove = (e: MouseEvent) => {
@@ -73,7 +73,7 @@ const HeroSection = () => {
             <div className="w-full h-full rounded-full overflow-hidden relative">
               <img
                 ref={imageRef}
-                src="brp.jpg" 
+                src={`${basePath}/brp.jpg`}
                 alt="Pratik Om Shrestha"
                 className="w-full h-full object-cover"
               />
