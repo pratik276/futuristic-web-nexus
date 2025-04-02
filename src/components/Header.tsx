@@ -30,7 +30,7 @@ const Header = () => {
             <div className="absolute inset-1 border border-neon-blue rounded-full animate-spin-slow opacity-50" style={{ animationDirection: 'reverse', animationDuration: '10s' }}></div>
             <span className="text-white font-bold relative z-10">P</span>
           </div>
-          <span className="font-mono text-white text-lg font-bold tracking-wider">PRATIK.OS</span>
+          <span className="font-mono text-white text-lg font-bold tracking-wider">PRATIK OM SHRESTHA</span>
         </Link>
 
         {/* Desktop Navigation */}

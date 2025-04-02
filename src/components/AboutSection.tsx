@@ -1,6 +1,5 @@
-
 import FuturisticCard from './FuturisticCard';
-import { Facebook, Linkedin, Twitter, Instagram, Coffee } from 'lucide-react';
+import { Facebook, Linkedin, X, Instagram, Coffee } from 'lucide-react';
 
 const AboutSection = () => {
   const socialLinks = [
@@ -16,7 +15,7 @@ const AboutSection = () => {
     },
     {
       name: 'Twitter',
-      icon: <Twitter className="w-5 h-5" />,
+      icon: <X className="w-5 h-5" />,
       url: 'https://x.com/Pratich'
     },
     {

@@ -1,4 +1,3 @@
-
 import { cn } from '@/lib/utils';
 
 const Footer = () => {
@@ -18,7 +17,7 @@ const Footer = () => {
               <div className="absolute inset-1 border border-neon-blue rounded-full animate-spin-slow opacity-50" style={{ animationDirection: 'reverse', animationDuration: '10s' }}></div>
               <span className="text-white font-bold relative z-10">P</span>
             </div>
-            <span className="font-mono text-white text-lg font-bold tracking-wider">PRATIK.OS</span>
+            <span className="font-mono text-white text-lg font-bold tracking-wider">PRATIK OM SHRESTHA</span>
           </div>
           
           {/* Separator */}
@@ -28,7 +27,7 @@ const Footer = () => {
           )}></div>
           
           {/* Copyright */}
-          <p className="text-white/60 font-mono text-sm tracking-wide">
+          <p className="text-white/20 font-mono text-xs tracking-wide">
             &copy; Pratik Om Shrestha @ {currentYear}
           </p>
         </div>
