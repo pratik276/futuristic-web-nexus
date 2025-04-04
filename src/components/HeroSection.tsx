@@ -73,7 +73,7 @@ const HeroSection = () => {
             <div className="w-full h-full rounded-full overflow-hidden relative">
               <img
                 ref={imageRef}
-                src={`${basePath}/brp.jpg`}
+                src={`https://pratikomshrestha.com.np/brp.jpg`}
                 alt="Pratik Om Shrestha"
                 className="w-full h-full object-cover"
               />
