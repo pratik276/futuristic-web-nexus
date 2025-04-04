@@ -5,7 +5,7 @@ import { ArrowDown } from 'lucide-react';
 const HeroSection = () => {
   const containerRef = useRef<HTMLDivElement>(null);
   const imageRef = useRef<HTMLImageElement>(null);
-  const basePath = import.meta.env.PROD ? '/futuristic-web-nexus' : '';
+  const basePath = import.meta.env.PROD ? '/' : '';
 
   useEffect(() => {
     const handleMouseMove = (e: MouseEvent) => {
