@@ -5,7 +5,7 @@ import { ArrowDown } from 'lucide-react';
 const HeroSection = () => {
   const containerRef = useRef<HTMLDivElement>(null);
   const imageRef = useRef<HTMLImageElement>(null);
-  const basePath = import.meta.env.PROD ? 'pratikomshrestha.com.np' : 'pratikomshrestha.com.np';
+  const basePath = import.meta.env.PROD ? '/' : 'pratikomshrestha.com.np';
 
   useEffect(() => {
     const handleMouseMove = (e: MouseEvent) => {
