@@ -10,7 +10,7 @@ const queryClient = new QueryClient();
 
 const AppRoutes = () => {
   const location = useLocation();
-  const basePath = import.meta.env.PROD ? '/futuristic-web-nexus' : '';
+  const basePath = import.meta.env.PROD ? '/' : '';
 
   return (
     <Routes>
