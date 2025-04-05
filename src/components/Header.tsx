@@ -1,3 +1,4 @@
+
 import { useState, useEffect } from 'react';
 import FuturisticButton from './FuturisticButton';
 import { Link } from 'react-router-dom';
@@ -6,7 +7,11 @@ import { Menu, X } from 'lucide-react';
 const Header = () => {
   const [isScrolled, setIsScrolled] = useState(false);
   const [mobileMenuOpen, setMobileMenuOpen] = useState(false);
-  const basePath = import.meta.env.PROD ? '/futuristic-web-nexus' : '';
+  // Remove this line since we're using a custom domain now
+  // const basePath = import.meta.env.PROD ? '/futuristic-web-nexus' : '';
+  
+  // Use '/' as base path for all environments since we have a custom domain
+  const basePath = '';
 
   useEffect(() => {
     const handleScroll = () => {
