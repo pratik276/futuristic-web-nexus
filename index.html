@@ -93,7 +93,7 @@
 <header>
   <div class="head">
     <a href="./" class="logo"><i></i>Pratik Om Shrestha</a>
-    <nav class="nav-links">
+    <nav class="nav-links" id="navLinks" aria-label="Primary">
       <a href="#about">About me</a>
       <a href="#capabilities">Capabilities</a>
       <a href="#work">Work</a>
@@ -101,7 +101,10 @@
       <a href="#industries">Industries</a>
       <a href="#contact">Contact</a>
     </nav>
-    <a class="mail-pill" href="mailto:contact@pratikomshrestha.com.np">Send email <span class="arr">⟶</span></a>
+    <div class="head-right">
+      <a class="mail-pill" href="mailto:contact@pratikomshrestha.com.np">Send email <span class="arr">⟶</span></a>
+      <button class="nav-toggle" id="navToggle" aria-label="Toggle navigation menu" aria-expanded="false" aria-controls="navLinks"><span></span><span></span></button>
+    </div>
   </div>
 </header>
 
@@ -113,10 +116,9 @@
     <div class="wrap hero-grid">
       <div class="hero-text">
         <div class="hero-id" data-reveal>
-          <div class="hero-name">Pratik Om Shrestha</div>
-          <div class="hero-role">Senior Project &amp; Product Manager | Digital Transformation Leader</div>
+          <h1 class="hero-name">Pratik Om Shrestha<span class="hero-role">Senior Project &amp; Product Manager | Digital Transformation Leader</span></h1>
         </div>
-        <h1>I turn complex business challenges into <span class="accent">digital products</span> that deliver.</h1>
+        <h2 class="hero-headline">I turn complex business challenges into <span class="accent">digital products</span> that deliver.</h2>
         <p data-reveal class="sub">Enterprise transformation <b>•</b> Product strategy <b>•</b> Delivery &amp; Digital Transformation <b>•</b> From idea to impact <b>•</b> MBA Finance</p>
         <div data-reveal class="hero-cta">
           <a class="btn btn-primary" href="mailto:contact@pratikomshrestha.com.np">Send email ⟶</a>
@@ -128,7 +130,7 @@
         <div class="portrait">
           <div class="portrait-glow"></div>
           <div class="portrait-ring"></div>
-          <img src="./brp.jpg" alt="Pratik Om Shrestha, Senior Project Manager in Nepal" width="800" height="800" fetchpriority="high" />
+          <img src="./pratik-om-shrestha-portrait.jpg" alt="Pratik Om Shrestha, Senior Project Manager in Nepal" width="800" height="800" fetchpriority="high" />
         </div>
         <div class="badge b-top">10+ YRS<br />DELIVERY</div>
         <div class="badge b-side">LALITPUR,<br />NEPAL</div>
@@ -139,6 +141,7 @@
   <!-- ABOUT -->
   <section class="panel" id="about">
     <div class="wrap">
+      <h2 class="visually-hidden">About Pratik Om Shrestha</h2>
       <div class="kicker" data-reveal>About Pratik Om Shrestha</div>
       <div class="about-text">
         <p data-reveal>I've always been fascinated by how digital products shape everyday experiences — from the way we communicate to the way we bank and work. Over the last decade, I've worked at the intersection of users, technology and business, leading large-scale digital initiatives that impact millions of people.</p>
@@ -258,7 +261,7 @@
           <div class="tl-role">Service Project Manager</div>
           <div class="tl-org">Huawei Technologies Nepal</div>
           <div class="tl-date">MAY 2015 — DEC 2016</div>
-          <p>98% SLA compliance through service assurance. Managed large-scale service delivery programs for Nepal Telecom - NTC GSM and Ncell FLM</p>
+          <p>SLA compliance through service assurance. Managed large-scale service delivery programs for Nepal Telecom - NTC GSM and Ncell FLM</p>
         </div>
         <div class="tl-item" data-reveal>
           <div class="tl-role">Earlier Roles</div>
